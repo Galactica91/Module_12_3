@@ -41,7 +41,6 @@ class TournamentTest(unittest.TestCase):
     def test_third_tournament(self):
         self.assertIn(3, [1, 2, 3])
 
-# Запуск TestSuite
 if __name__ == "__main__":
     suite = unittest.TestLoader().loadTestsFromTestCase(RunnerTest)
     suite.addTests(unittest.TestLoader().loadTestsFromTestCase(TournamentTest))
